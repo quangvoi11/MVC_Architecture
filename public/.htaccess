@@ -1,0 +1,7 @@
+# public/.htaccess
+
+RewriteEngine On
+RewriteBase /DungVuongStore/public/
+
+# Chuyển tất cả yêu cầu /api/* tới index.php
+RewriteRule ^api/(.*)$ index.php/$1 [QSA,L]
